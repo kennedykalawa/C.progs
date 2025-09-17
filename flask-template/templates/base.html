@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>base</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
+    </head>
+
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}" class="navbar-brand">Home</a></li>
+                <li><a href="{{ url_for('about') }}" class="navbar-item">About</a></li>
+        </ul>
+        </div>
+
+        <div class="body-content">
+           this is the base page 
+            <hr/>
+        </div>
+    </body>
+</html>
